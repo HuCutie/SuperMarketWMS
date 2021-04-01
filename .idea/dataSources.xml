@@ -1,20 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="WMS@192.168.31.231" uuid="6c005b37-b620-4f0d-8858-a17da44d4bd5">
+    <data-source source="LOCAL" name="WMS" uuid="6c005b37-b620-4f0d-8858-a17da44d4bd5">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/wms_test</jdbc-url>
-      <driver-properties>
-        <property name="serverTimezone" value="GMT" />
-      </driver-properties>
-    </data-source>
-    <data-source source="LOCAL" name="WMS@192.168.31.231 [2]" uuid="6322caf9-1053-4107-872b-21a65c70f578">
-      <driver-ref>mysql.8</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://192.168.31.231:3306/WMS</jdbc-url>
+      <jdbc-url>jdbc:mysql://192.168.43.174:3306/WMS</jdbc-url>
       <driver-properties>
         <property name="serverTimezone" value="GMT" />
       </driver-properties>
