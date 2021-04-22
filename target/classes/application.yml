@@ -3,7 +3,8 @@ spring:
   datasource:
     druid:
       driver-class-name: com.mysql.cj.jdbc.Driver
-      url: jdbc:mysql://192.168.43.174:3306/WMS?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT
+      #url: jdbc:mysql://192.168.43.174:3306/WMS?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT
+      url: jdbc:mysql://192.168.31.231:3306/WMS?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT
       username: root
       password: c1341454644L
       max-active: 20
