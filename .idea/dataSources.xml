@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="WMS" uuid="6c005b37-b620-4f0d-8858-a17da44d4bd5">
+    <data-source source="LOCAL" name="WMS" uuid="a543e6dc-b14d-496d-9950-0d249e654c8b">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://192.168.43.174:3306/WMS</jdbc-url>
-      <driver-properties>
-        <property name="serverTimezone" value="GMT" />
-      </driver-properties>
+      <jdbc-url>jdbc:mysql://192.168.94.130:3306?useUnicode=true&amp;characterEncoding=utf8&amp;serverTimezone=GMT</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
 </project>

@@ -26,7 +26,5 @@ public class WarehouseApplication {
         factory.setMaxRequestSize(DataSize.parse("102400KB"));
         return factory.createMultipartConfig();
     }
-
-
 }
 
