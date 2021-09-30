@@ -63,7 +63,7 @@ public class MenuController {
             String title = p.getTitle();
             String icon = p.getIcon();
             String href = p.getHref();
-            Boolean spread = p.getOpen().equals(Constast.OPEN_TRUE)?true:false;
+            Boolean spread = p.getOpen().equals(Constast.OPEN_TRUE);
             treeNodes.add(new TreeNode(id,pid,title,icon,href,spread));
         }
 
