@@ -1,7 +1,7 @@
 /*
  Navicat Premium Data Transfer
 
- Source Server         : localhost
+ Source Server         : 138.2.37.0
  Source Server Type    : MySQL
  Source Server Version : 8019
  Source Host           : localhost:3306
@@ -13,8 +13,6 @@
 
  Date: 27/09/2020 22:10:23
 */
-create database  WMS;
-use WMS;
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
 

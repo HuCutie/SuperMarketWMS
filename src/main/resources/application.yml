@@ -3,9 +3,9 @@ spring:
   datasource:
     druid:
       driver-class-name: com.mysql.cj.jdbc.Driver
-      url: jdbc:mysql://192.168.42.128:3306/WMS?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT
-      username: hucutie
-      password: c1341454644L
+      url: jdbc:mysql://138.2.38.166:3306/WMS?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT
+      username: root
+      password: 1341454644
       max-active: 20
       max-wait: 5000
       initial-size: 1
@@ -15,8 +15,8 @@ spring:
     #监控配置
       stat-view-servlet:
         enabled: true
-        login-username: hucutie
-        login-password: c1341454644L
+        login-username: root
+        login-password: 1341454644
         url-pattern: /druid/*
 
   servlet:
