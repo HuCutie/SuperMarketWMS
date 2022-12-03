@@ -35,8 +35,10 @@ public class CustomerController {
     @RequestMapping("loadAllCustomer")
     public DataGridView loadAllCustomer(CustomerVo customerVo){
         //1.声明一个分页page对象
+        @SuppressWarnings({"unchecked","rawtypes"})
         IPage<Customer> page = new Page(customerVo.getPage(),customerVo.getLimit());
         //2.声明一个queryWrapper
+        @SuppressWarnings({"unchecked","rawtypes"})
         QueryWrapper<Customer> queryWrapper = new QueryWrapper();
         queryWrapper.like(StringUtils.isNotBlank(customerVo.getCustomername()),"customername",customerVo.getCustomername());
         queryWrapper.like(StringUtils.isNotBlank(customerVo.getConnectionpersion()),"connectionpersion",customerVo.getConnectionpersion());

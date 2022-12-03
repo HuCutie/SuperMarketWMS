@@ -35,8 +35,10 @@ public class ProviderController {
     @RequestMapping("loadAllProvider")
     public DataGridView loadAllProvider(ProviderVo providerVo){
         //1.声明一个分页page对象
+        @SuppressWarnings({"unchecked","rawtypes"})
         IPage<Provider> page = new Page(providerVo.getPage(),providerVo.getLimit());
         //2.声明一个queryWrapper
+        @SuppressWarnings({"unchecked","rawtypes"})
         QueryWrapper<Provider> queryWrapper = new QueryWrapper();
         queryWrapper.like(StringUtils.isNotBlank(providerVo.getProvidername()),"providername",providerVo.getProvidername());
         queryWrapper.like(StringUtils.isNotBlank(providerVo.getConnectionperson()),"connectionperson",providerVo.getConnectionperson());
@@ -119,6 +121,7 @@ public class ProviderController {
      */
     @RequestMapping("loadAllProviderForSelect")
     public DataGridView loadAllProviderForSelect(){
+        @SuppressWarnings({"unchecked","rawtypes"})
         QueryWrapper<Provider> queryWrapper = new QueryWrapper();
         queryWrapper.eq("available", Constast.AVAILABLE_TRUE);
         List<Provider> list = providerService.list(queryWrapper);

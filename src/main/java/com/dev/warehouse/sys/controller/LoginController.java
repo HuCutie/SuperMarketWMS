@@ -6,9 +6,7 @@ import com.dev.warehouse.sys.common.ActiverUser;
 import com.dev.warehouse.sys.common.ResultObj;
 import com.dev.warehouse.sys.common.WebUtils;
 import com.dev.warehouse.sys.entity.Loginfo;
-import com.dev.warehouse.sys.entity.Role;
 import com.dev.warehouse.sys.service.ILoginfoService;
-import com.dev.warehouse.sys.service.IRoleService;
 import com.dev.warehouse.sys.vo.UserVo;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
@@ -24,7 +22,6 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.Date;
-import java.util.List;
 
 
 @RestController
@@ -33,10 +30,6 @@ public class LoginController {
 
     @Autowired
     private ILoginfoService loginfoService;
-
-    @Autowired
-    private IRoleService roleService;
-
 
     //shiro控制登录中的权限问题
     @RequestMapping("login")

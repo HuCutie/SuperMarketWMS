@@ -38,6 +38,7 @@ public class GoodsController {
     @RequestMapping("loadAllGoods")
     public DataGridView loadAllGoods(GoodsVo goodsVo){
         IPage<Goods> page = new Page<Goods>(goodsVo.getPage(),goodsVo.getLimit());
+        @SuppressWarnings({"unchecked","rawtypes"})
         QueryWrapper<Goods> queryWrapper = new QueryWrapper();
         queryWrapper.eq(goodsVo.getProviderid()!=null&&goodsVo.getProviderid()!=0,"providerid",goodsVo.getProviderid());
         queryWrapper.like(StringUtils.isNotBlank(goodsVo.getGoodsname()),"goodsname",goodsVo.getGoodsname());

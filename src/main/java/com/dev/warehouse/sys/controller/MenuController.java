@@ -8,7 +8,6 @@ import com.dev.warehouse.sys.entity.Permission;
 import com.dev.warehouse.sys.entity.User;
 import com.dev.warehouse.sys.service.IPermissionService;
 import com.dev.warehouse.sys.service.IRoleService;
-import com.dev.warehouse.sys.service.IUserService;
 import com.dev.warehouse.sys.vo.PermissionVo;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,9 +23,6 @@ public class MenuController {
 
     @Autowired
     private IPermissionService permissionService;
-
-    @Autowired
-    private IUserService userService;
 
     @Autowired
     private IRoleService roleService;
