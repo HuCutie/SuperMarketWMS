@@ -141,7 +141,7 @@ public class UserController {
             String salt = IdUtil.simpleUUID().toUpperCase();
             userVo.setSalt(salt);
             //设置密码
-            String pwd = new Md5Hash(Constast.USER_DEFAULT_PWD,salt,1).toString();
+            String pwd = new Md5Hash(Constast.USER_DEFAULT_PWD,salt,2).toString();
             userVo.setPwd(pwd);
             userService.save(userVo);
             return ResultObj.ADD_SUCCESS;
@@ -207,7 +207,7 @@ public class UserController {
             String salt = IdUtil.simpleUUID().toUpperCase();
             user.setSalt(salt);
             //设置密码
-            String pwd = new Md5Hash(Constast.USER_DEFAULT_PWD,salt,1).toString();
+            String pwd = new Md5Hash(Constast.USER_DEFAULT_PWD,salt,2).toString();
             user.setPwd(pwd);
             userService.updateById(user);
             return ResultObj.RESET_SUCCESS;
@@ -230,8 +230,7 @@ public class UserController {
             String salt = IdUtil.simpleUUID().toUpperCase();
             user.setSalt(salt);
             //设置密码
-            String pwd1 = new Md5Hash(Constast.USER_DEFAULT_PWD,salt,1).toString();
-            user.setPwd(pwd1);
+            user.setPwd(new Md5Hash(pwd,salt,2).toString());
             userService.updateById(user);
             return ResultObj.RESET_SUCCESS;
         } catch (Exception e) {
