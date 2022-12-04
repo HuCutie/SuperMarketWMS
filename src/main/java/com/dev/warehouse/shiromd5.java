@@ -1,13 +1,13 @@
-package com.dev.warehouse.sys.vo;
+package com.dev.warehouse;
 
 import org.apache.shiro.crypto.hash.Md5Hash;
 
 public class shiromd5 {
     public static void main(String[] args) {
-        System.out.println(md5("123456", "admin", 2));
+        System.out.println(md5("123456"));
     }
 
-    private static String md5(String source, String salt, int hashiteraations) {
+    private static String md5(String source) {
         Md5Hash hash1 = new Md5Hash("123456");
         System.out.println("MD5: " + hash1);
 
